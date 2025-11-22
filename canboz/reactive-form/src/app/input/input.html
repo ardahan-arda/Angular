@@ -1,0 +1,29 @@
+<div class="field">
+   <label
+      class="label"
+      Name
+      >{{ label }}</label
+   >
+   <div class="control">
+      <input
+         class="input"
+         type="text"
+         [class.is-danger]="showErrors()"
+         [formControl]="control"
+      />
+   </div>
+</div>
+<!-- ignore prettier -->
+@if(showErrors()){ @if(control.errors!['required']){
+<div class="help is-danger">{{ label }} zorunludur.</div>
+} @if (control.errors!["minlength"]){
+<div class="help is-danger">
+   Girdiğiniz isim {{ control.errors!["minlength"]["actualLength"] }} karakter içermektedir. En az
+   {{ control.errors!["minlength"]["requiredLength"] }} karakter olmalı.
+</div>
+} @if (control.errors!["maxlength"]){
+<div class="help is-danger">
+   Girdiğiniz isim {{ control.errors!["maxlength"]["actualLength"] }} karakter içermektedir. En
+   fazla {{ control.errors!["maxlength"]["requiredLength"] }} karakter olmalı.
+</div>
+} }

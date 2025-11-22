@@ -1,0 +1,12 @@
+<div class="main">
+  @for(item of posts;track item){
+
+  <app-card
+    [title]="item.title"
+    [imageUrl]="item.imageUrl"
+    [username]="item.username"
+    [content]="item.content"
+  ></app-card>
+
+  }
+</div>

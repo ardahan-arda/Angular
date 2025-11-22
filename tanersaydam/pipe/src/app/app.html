@@ -1,0 +1,19 @@
+<div>Liste</div>
+<div>
+  <input [(ngModel)]="work">
+  <button (click)="save()">Ekle</button>
+</div>
+<div>
+  <input type="search" [(ngModel)]="search" placeholder="Ara">
+  <ul>
+    @for(item of todos | todo:search;track item){
+    <li>{{item}}</li>
+    }
+  </ul>
+</div>
+
+<hr>
+
+<div>
+  {{name | name}}
+</div>

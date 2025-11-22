@@ -1,0 +1,15 @@
+<h1>class - ngClass</h1>
+
+
+<p class="form-control" [class]="pClassName === 'red' ? 'blue' : 'red'">
+  Lorem ipsum dolor sit amet.
+</p>
+
+<p class="form-control" [class.active]="pClassName === 'red'">
+  Lorem ipsum dolor sit amet consectetur.
+</p>
+
+<p class="form-control" [ngClass]="pClassName === 'red' ? 'blue' : 'red'">Lorem ipsum dolor sit amet consectetur
+  adipisicing.</p>
+
+<hr>

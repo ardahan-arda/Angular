@@ -1,0 +1,12 @@
+<div class="ui statistics">
+   @for(item of data;track item){
+   <div class="statistic">
+      @if(item.label === "Ciro"){
+      <div class="value">{{ item.value }} ₺</div>
+      }@else{
+      <div class="value">{{ item.value }}</div>
+      }
+      <div class="label">{{ item.label }}</div>
+   </div>
+   }
+</div>

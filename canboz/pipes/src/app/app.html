@@ -1,0 +1,90 @@
+<div class="container">
+  <h3>Fatura</h3>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>İsim</label>
+        <input class="form-control" (input)="onNameChange($event.target.value)" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>İsim</b></label>
+      <div>
+        {{ name | titlecase }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Ödeme Tarihi</label>
+        <input class="form-control" (input)="onDateChange($event.target.value)" type="date" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Ödeme Tarihi</b></label>
+      <div>
+        {{ date | date : 'MMMM d,y' }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Tutar</label>
+        <input class="form-control" (input)="onMoneyChange($event.target.value)" type="text" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Tutar</b></label>
+      <div>
+        @if(money){
+        {{ money | currency : 'JPY' }}
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Boy</label>
+        <input class="form-control" (input)="onHeighChange($event.target.value)" type="text" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Boy</b></label>
+      <div>
+        @if(height){
+        {{ height | number : '0.2-2' }}
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Mil</label>
+        <input class="form-control" (input)="onMilesChange($event.target.value)" type="text" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label><b>Km</b></label>
+      <div>
+        @if(miles){
+        {{ miles | convert : 'm' | number : '0.2-2' }}
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-12">
+      {{ lessons | json }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "html.format.wrapLineLength": 60,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "prettier.printWidth": 60,
+  "prettier.singleAttributePerLine": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  }
+}

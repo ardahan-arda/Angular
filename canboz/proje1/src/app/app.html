@@ -1,0 +1,38 @@
+<div class="ui container">
+   <div class="ui secondary pointing menu">
+      <a
+         routerLinkActive="active"
+         class="item"
+         routerLink="./"
+         [routerLinkActiveOptions]="{ exact: true }"
+         >Home</a
+      >
+      <a
+         routerLinkActive="active"
+         class="item"
+         routerLink="/placeholders"
+         >Placeholders</a
+      >
+      <a
+         routerLinkActive="active"
+         class="item"
+         routerLink="/tables"
+         >Tables</a
+      >
+      <a
+         routerLinkActive="active"
+         class="item"
+         routerLink="/lists"
+         >Lists</a
+      >
+      <a
+         routerLinkActive="active"
+         class="item"
+         routerLink="/popups"
+         >Popup</a
+      >
+   </div>
+   <div class="ui segment">
+      <router-outlet></router-outlet>
+   </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="container">
+  <nav>
+    <ul class="pagination">
+      <li
+        class="page-item"
+        [class.disabled]="currentPage === 0"
+        (click)="currentPage === 0 ? null : (currentPage = currentPage - 1)"
+      >
+        <a class="page-link" href="#">Önceki</a>
+      </li>
+      @for(item of images;track item) {
+        @if (pageIndex($index)) {
+          <li class="page-item"
+            [class.active]="$index === currentPage"
+            (click)="currentPage = $index">
+            <a class="page-link" href="#">{{ $index + 1 }}</a>
+          </li>
+        }
+      }
+      <li
+        class="page-item"
+        [class.disabled]="currentPage === images.length - 1"
+        (click)="currentPage === images.length - 1 ? null : (currentPage = currentPage + 1)"
+      >
+        <a class="page-link" href="#">Sonraki</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h4 appFirst [backgroundColor]="'red'">{{ images[currentPage].title }}</h4>
+    <img [src]="images[currentPage].url" [alt]="images[currentPage].title" />
+  </div>
+
+  <!-- @switch (currentPage) {
+    @case (0) {
+      <div>İlk Sayfa</div>
+    }
+    @case (1) {
+      <div>İkinci Sayfa</div>
+    }
+    @case (2) {
+      <div>Üçüncü Sayfa</div>
+    }
+    @default {
+      <div>Diğer Sayfalar</div>
+    }
+  } -->
+</div>
+

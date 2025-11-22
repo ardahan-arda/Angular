@@ -1,0 +1,18 @@
+<h1>TWO DATA BINDING</h1>
+
+<p>{{text}}</p>
+
+<input type="text" style="display: block;" (keyup)="changeText($event)">
+
+<!-- Two Data Binding -->
+<input type="text" style="display: block; margin-top: 5px;" [(ngModel)]="text">
+
+<textarea type="text" style="display: block; margin-top: 5px;" [(ngModel)]="text"></textarea>
+
+<select [(ngModel)]="select" name="select">
+  <option value="">Seçim Yapın</option>
+  <option value="a">1</option>
+  <option value="b">2</option>
+  <option value="c">3</option>
+</select>
+<p>{{select}}</p>

@@ -1,58 +1,49 @@
 {
-  "hash": "f1bf3391",
-  "configHash": "8817d1d2",
-  "lockfileHash": "940ae3ee",
-  "browserHash": "f97efde3",
+  "hash": "e5c9cd02",
+  "configHash": "4c046b2d",
+  "lockfileHash": "6a3379ba",
+  "browserHash": "72685250",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "060be2ac",
+      "fileHash": "494aa4c8",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "223e56c4",
+      "fileHash": "e7facbc6",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "dbe6042b",
+      "fileHash": "4e8966a3",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "9e5b6eff",
-      "needsInterop": false
-    },
-    "rxjs/ajax": {
-      "src": "../../../../../../node_modules/rxjs/dist/esm5/ajax/index.js",
-      "file": "rxjs_ajax.js",
-      "fileHash": "36655df0",
+      "fileHash": "45e1e837",
       "needsInterop": false
     },
     "zone.js": {
       "src": "../../../../../../node_modules/zone.js/fesm2015/zone.js",
       "file": "zone__js.js",
-      "fileHash": "2439da76",
+      "fileHash": "eebe92c0",
       "needsInterop": true
     }
   },
   "chunks": {
-    "chunk-KICUV5PO": {
-      "file": "chunk-KICUV5PO.js"
+    "chunk-WPQXKFK5": {
+      "file": "chunk-WPQXKFK5.js"
     },
-    "chunk-PIN2IMZW": {
-      "file": "chunk-PIN2IMZW.js"
+    "chunk-2OC7KYYQ": {
+      "file": "chunk-2OC7KYYQ.js"
     },
-    "chunk-KUSC63GT": {
-      "file": "chunk-KUSC63GT.js"
-    },
-    "chunk-HOFLPY52": {
-      "file": "chunk-HOFLPY52.js"
+    "chunk-RSS3ODKE": {
+      "file": "chunk-RSS3ODKE.js"
     },
     "chunk-WDMUDEB6": {
       "file": "chunk-WDMUDEB6.js"

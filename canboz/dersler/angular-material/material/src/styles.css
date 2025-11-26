@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.mat-display-1 {
+  font: var(--mat-sys-display-large);
+  margin-bottom: 0.5rem;
+}
+
+.mat-display-2 {
+  font: var(--mat-sys-display-medium);
+  margin-bottom: 0.5rem;
+}
+
+.mat-display-3 {
+  font: var(--mat-sys-display-small);
+  margin-bottom: 0.5rem;
+}
+
+.mat-display-4 {
+  font: var(--mat-sys-headline-large);
+  margin-bottom: 0.5rem;
+}
